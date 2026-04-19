@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixzen Luxury Showroom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">Fixzen Luxury Showroom</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Fixzen</h1>
+            <p>Luxury Cars | Premium Experience</p>
+            <button class="btn-explore">Explore Cars</button>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Fixzen Luxury Showroom offers the finest collection of premium and supercars. We provide top-quality service, exclusive models, and an unmatched luxury experience.</p>
+    </section>
+
+    <section class="collection">
+        <h2>Luxury Cars Collection</h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1603577372314-d4624470942a?auto=format&fit=crop&q=80&w=400" alt="BMW M4">
+                <h3>BMW M4</h3>
+                <p>503 HP | 0-100: 3.8 sec</p>
+                <div class="price">₹1.50 Crore</div>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?auto=format&fit=crop&q=80&w=400" alt="Audi R8">
+                <h3>Audi R8</h3>
+                <p>602 HP | 0-100: 3.2 sec</p>
+                <div class="price">₹2.72 Crore</div>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&q=80&w=400" alt="Lamborghini">
+                <h3>Lamborghini Huracan</h3>
+                <p>631 HP | 0-100: 2.9 sec</p>
+                <div class="price">₹3.22 Crore</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking">
+        <h2>Book Your Dream Car</h2>
+        <select>
+            <option>Select Car</option>
+            <option>BMW M4</option>
+            <option>Audi R8</option>
+            <option>Lamborghini Huracan</option>
+        </select>
+        <br>
+        <button class="btn-submit">Submit Booking</button>
+    </section>
+
+</body>
+</html>
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a2e35; /* Dark teal background from image */
+    color: white;
+    text-align: center;
+}
+
+/* Header & Nav */
+header {
+    background-color: #0b161a;
+    padding: 20px 0;
+}
+
+.logo {
+    color: #00e5ff;
+    text-shadow: 0 0 15px #00e5ff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn-explore {
+    background-color: #00e5ff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* About Section */
+.about {
+    padding: 50px 10%;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.6;
+    color: #cbd5e0;
+}
+
+/* Collection Grid */
+.collection {
+    padding: 50px 20px;
+}
+
+.car-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.car-card {
+    background-color: #243b44;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.car-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.car-card h3 {
+    color: #00e5ff;
+    margin: 10px 0;
+}
+
+.car-card p {
+    font-size: 0.9rem;
+    color: #a0aec0;
+}
+
+.price {
+    color: #48bb78;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Booking Section */
+.booking {
+    padding: 80px 20px;
+}
+
+select {
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    background-color: #00e5ff;
+    border: none;
+    padding: 12px 40px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
