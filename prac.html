@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSE Time Table</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 50px;
+            text-shadow: 0 0 15px cyan;
+        }
+
+        .subjects {
+            margin: 20px auto;
+        }
+
+        .subjects ul {
+            list-style: disc;
+            display: inline-block;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .container {
+            margin: 40px auto;
+            width: 90%;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            padding: 10px;
+            color: white;
+        }
+
+        td {
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        tr:hover td {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .lunch {
+            background: linear-gradient(to bottom, orange, red);
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSE Time Table</h1>
+
+    <div class="subjects">
+        <h3>Subjects Included:</h3>
+        <ul>
+            <li>OOP</li>
+            <li>CAO</li>
+            <li>AEC</li>
+            <li>FLA</li>
+            <li>CW</li>
+            <li>NPTEL/TECH</li>
+            <li>MDM</li>
+            <li>EDM</li>
+            <li>DTS</li>
+            <li>OE</li>
+            <li>LIBRARY</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Weekly Schedule</h2>
+
+        <table border="1">
+            <tr>
+                <th>Day</th>
+                <th>10:15-11:15</th>
+                <th>11:15-12:15</th>
+                <th>12:15-1:15</th>
+                <th>1:15-2:00</th>
+                <th>2:00-3:00</th>
+                <th>3:00-4:00</th>
+                <th>4:00-5:00</th>
+            </tr>
+
+            <tr>
+                <td>Monday</td>
+                <td>OOP</td>
+                <td>CAO</td>
+                <td>AEC</td>
+                <td class="lunch">Lunch</td>
+                <td>FLA</td>
+                <td>CW</td>
+                <td>NPTEL</td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td>FLA</td>
+                <td>OOP</td>
+                <td>MDM</td>
+                <td class="lunch">Lunch</td>
+                <td>CAO</td>
+                <td>EDM</td>
+                <td>NPTEL</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>FLA</td>
+                <td>AEC</td>
+                <td>MDM</td>
+                <td class="lunch">Lunch</td>
+                <td>CW</td>
+                <td>DTS</td>
+                <td>LIBRARY</td>
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td>OOP</td>
+                <td>NPTEL</td>
+                <td>OE</td>
+                <td class="lunch">Lunch</td>
+                <td>OOP (LAB)</td>
+                <td>CW</td>
+                <td>LIBRARY</td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td>EDM</td>
+                <td>CAO</td>
+                <td>OE</td>
+                <td class="lunch">Lunch</td>
+                <td>DTS</td>
+                <td>LIBRARY</td>
+                <td>-</td>
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+</html>
