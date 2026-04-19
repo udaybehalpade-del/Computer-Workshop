@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Calculator</title>
+    <style>
+        /* General Setup */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000; /* Pitch black background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .calculator {
+            width: 320px;
+            padding: 20px;
+        }
+
+        /* Display area */
+        .display {
+            color: white;
+            font-size: 84px;
+            text-align: right;
+            padding: 20px 10px;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        /* Grid for buttons */
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        /* Base button styles */
+        button {
+            height: 72px;
+            border-radius: 50%;
+            border: none;
+            font-size: 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: brightness 0.2s;
+        }
+
+        button:active {
+            filter: brightness(1.5);
+        }
+
+        /* Color schemes */
+        .dark-gray {
+            background-color: #333333;
+            color: white;
+        }
+
+        .light-gray {
+            background-color: #a5a5a5;
+            color: black;
+            font-weight: 500;
+        }
+
+        .orange {
+            background-color: #ff9f0a;
+            color: white;
+            font-size: 36px;
+        }
+
+        /* Special styling for '0' button */
+        .btn-zero {
+            grid-column: span 2;
+            border-radius: 50px;
+            justify-content: flex-start;
+            padding-left: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+        <div class="display">2+5</div>
+
+        <div class="buttons-grid">
+            <button class="light-gray">AC</button>
+            <button class="light-gray">DEL</button>
+            <button class="orange">%</button>
+            <button class="orange">÷</button>
+
+            <button class="dark-gray">7</button>
+            <button class="dark-gray">8</button>
+            <button class="dark-gray">9</button>
+            <button class="orange">×</button>
+
+            <button class="dark-gray">4</button>
+            <button class="dark-gray">5</button>
+            <button class="dark-gray">6</button>
+            <button class="orange">−</button>
+
+            <button class="dark-gray">1</button>
+            <button class="dark-gray">2</button>
+            <button class="dark-gray">3</button>
+            <button class="orange">+</button>
+
+            <button class="dark-gray btn-zero">0</button>
+            <button class="dark-gray">.</button>
+            <button class="orange">=</button>
+        </div>
+    </div>
+
+</body>
+</html>
