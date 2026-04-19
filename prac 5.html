@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Largest Number</title>
+    <style>
+        /* Background and Centering */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a7df1 0%, #a26df1 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* The White Card */
+        .card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        /* Input Styling */
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 1.5px solid #dcdcdc;
+            border-radius: 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: #6a7df1;
+        }
+
+        /* Button Styling */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #6e82f1;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #5a6edb;
+        }
+
+        /* Result Text */
+        .result {
+            font-size: 18px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        #largest-num {
+            color: #6a4ab1; /* Purple color from image */
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Find the Largest Number</h2>
+        
+        <input type="text" id="numberInput" placeholder="Enter numbers separated by commas (e.g. 5,10,3,25)">
+        
+        <button onclick="findMax()">Find Largest</button>
+        
+        <div class="result">
+            Largest Number is: <span id="largest-num">--</span>
+        </div>
+    </div>
+
+    <script>
+        function findMax() {
+            const input = document.getElementById('numberInput').value;
+            const resultDisplay = document.getElementById('largest-num');
+            
+            // Split by comma, convert to numbers, and filter out non-numbers
+            const numArray = input.split(',')
+                                 .map(n => parseFloat(n.trim()))
+                                 .filter(n => !isNaN(n));
+
+            if (numArray.length > 0) {
+                const max = Math.max(...numArray);
+                resultDisplay.innerText = max;
+            } else {
+                resultDisplay.innerText = "Error";
+            }
+        }
+    </script>
+
+</body>
+</html>
