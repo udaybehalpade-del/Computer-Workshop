@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bootstrap 3D Web Design</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      min-height: 100vh;
+      background: linear-gradient(160deg, #6c79d4 0%, #7c60c0 50%, #9b55b8 100%);
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px 16px;
+    }
+
+    h1 {
+      color: #fff;
+      font-weight: 800;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.95rem;
+      margin-bottom: 36px;
+    }
+
+    /* ── CARDS ── */
+    .card {
+      border: none;
+      border-radius: 16px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) rotateX(4deg);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    }
+
+    .card-title { font-weight: 800; font-size: 1.15rem; }
+    .card-text  { font-size: 0.88rem; color: #555; margin-bottom: 16px; }
+
+    /* ── BUTTONS ── */
+    .btn-blue  { background: #1a6fd4; color: #fff; border: none; border-radius: 50px; padding: 10px 26px; font-weight: 600; }
+    .btn-green { background: #28a745; color: #fff; border: none; border-radius: 50px; padding: 10px 26px; font-weight: 600; }
+    .btn-red   { background: #dc3545; color: #fff; border: none; border-radius: 50px; padding: 10px 26px; font-weight: 600; }
+
+    .btn-blue:hover  { background: #155bb5; }
+    .btn-green:hover { background: #218838; }
+    .btn-red:hover   { background: #c82333; }
+
+    /* ── ALERTS ── */
+    .alert-section { margin-top: 36px; }
+
+    .alert {
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 16px 20px;
+      border: none;
+      margin-bottom: 14px;
+    }
+
+    .alert-success { background: #d4edda; color: #1a5c2a; }
+    .alert-warning { background: #fff3cd; color: #856404; }
+    .alert-danger  { background: #fce4e4; color: #842029; }
+  </style>
+</head>
+<body>
+
+  <h1>✨ Bootstrap 3D Web Design</h1>
+  <p class="subtitle">Grid System, Buttons &amp; Alerts with Modern Effects</p>
+
+  <!-- CARDS -->
+  <div class="container">
+    <div class="row g-3 justify-content-center">
+      <div class="col-12 col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">This is a Bootstrap Grid column with 3D effect.</p>
+            <button class="btn-blue">Click Me</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">Responsive layout using Bootstrap Grid System.</p>
+            <button class="btn-green">Explore</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card 3</h5>
+            <p class="card-text">Hover for smooth 3D animation effect.</p>
+            <button class="btn-red">More Info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ALERTS -->
+    <div class="alert-section">
+      <div class="alert alert-success">✅ Success! Your action was completed.</div>
+      <div class="alert alert-warning">⚠️ Warning! Check your input.</div>
+      <div class="alert alert-danger">❌ Error! Something went wrong.</div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
